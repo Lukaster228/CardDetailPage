@@ -21,6 +21,19 @@ body, html{
     align-items: center;
 }
 
+#main-container-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+}
+
+#card-front-side-container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
 #card-front-side-div {
     background-image: url("images/bg-card-front.png");
     width: 447px;
@@ -56,17 +69,40 @@ body, html{
     color: white;
 }
 
+#card-back-side-container {
+    display: flex;
+    justify-content: right;
+}
+
+#cvc-container {
+    background-image: url("images/bg-card-back.png");
+    height: 245px;
+    display: flex;
+    justify-content: right;
+    padding: 110px 60px;
+    width: 447px;
+}
+
+#cvc {
+    color: white;
+}
+
 #main-container-content-el {
     display: flex;
     justify-content: space-between;
-    height: 300px;
-    width: 900px;
+    height: 525px;
+    width: 1400px;
 }
 
 #main-container-right-side {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+#enter-name-container, #enter-card-number-container, #doe-and-cvc-container {
+    margin: 0 0 25px 0;
 }
 
 #cardholder-name-txt-div, #card-number-txt-div, #doe-txt-container, #cvc-txt-container {
