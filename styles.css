@@ -16,10 +16,79 @@ body, html{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    display: flex;
+    padding: 150px 130px;
 }
 
-#card-front-side-div {
-    background-image: url("images/bg-card-front.png");
-    background-size: cover;
+#main-container-content-el {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+#main-container-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cardholder-name-txt-div, #card-number-txt-div, #doe-txt-container, #cvc-txt-container {
+    margin: 0 0 10px 0;
+}
+
+#cardholder-name-txt, #card-number-txt, #doe-txt, #cvc-txt {
+    font-size: 14px;
+}
+
+#input-name-container, #input-card-number-container {
+    width: 80%;
+}
+
+#input-name, #input-card-number, #input-month, #input-year, #input-cvc {
+    width: 100%;
+    border-radius: 7px;
+    height: 35px;
+    border: 1px solid gray;
+}
+
+#doe-and-cvc-container {
+    border-color: blue;
+    display: flex;
+    width: 80%;
+}
+
+#doe-container-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#doe-input-container {
+    display: flex;
+    width: 70%; 
+    justify-content: space-between;
+}
+
+#input-month-container, #input-year-container {
+    width: 48%;
+}
+
+#input-cvc-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#confirm-btn-container {
+    margin-top: 25px;
+    width: 100%;
+}
+
+#conform-btn {
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    width: 371px;
+    padding: 12px 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
 }
