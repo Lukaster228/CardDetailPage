@@ -21,6 +21,41 @@ body, html{
     align-items: center;
 }
 
+#card-front-side-div {
+    background-image: url("images/bg-card-front.png");
+    width: 447px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#front-card-top-part {
+    display: flex;
+}
+
+#front-card-bottom-part {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+}
+
+#card-number {
+    color: white;
+    font-size: 25px;
+}
+
+#name-and-doe-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#person-name, #doe {
+    color: white;
+}
+
 #main-container-content-el {
     display: flex;
     justify-content: space-between;
