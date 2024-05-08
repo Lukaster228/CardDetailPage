@@ -65,6 +65,13 @@ body, html{
     justify-content: space-between;
 }
 
+#doe-container {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
 #person-name, #doe {
     color: white;
 }
@@ -96,9 +103,11 @@ body, html{
 
 #main-container-right-side {
     height: 100%;
+    width: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
 }
 
 #enter-name-container, #enter-card-number-container, #doe-and-cvc-container {
@@ -121,7 +130,6 @@ body, html{
     width: 100%;
     border-radius: 7px;
     height: 35px;
-    border: 1px solid gray;
 }
 
 #doe-and-cvc-container {
@@ -166,3 +174,20 @@ body, html{
     font-family: "Space Grotesk", sans-serif;
     font-size: 16px;
 }
+
+#conform-btn:hover {
+    cursor: pointer;
+}
+
+.input-styles {
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.input-styles:focus {
+    border-color: hsl(278, 68%, 11%);
+} 
